@@ -1,0 +1,560 @@
+:root{
+    --white:#fff;
+    --pink:#FC427B;
+    
+  }
+  
+  *{
+    font-family: 'Nunito', sans-serif;
+    margin:0; padding:0;
+    box-sizing: border-box;
+    outline: none; border:none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all .2s ease-out;
+  }
+  
+  html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+  }
+  
+  html::-webkit-scrollbar{
+    width:1rem;
+  }
+  
+  html::-webkit-scrollbar-track{
+    background:#333;
+  }
+  
+  html::-webkit-scrollbar-thumb{
+    background:#fff;
+    border-radius: 5rem;
+  }
+  
+  
+  
+  section{
+    padding:2rem 7%;
+  }
+  
+  .container{
+    background:#fff;
+    border-radius: .5rem;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.2);
+  }
+  
+  .heading{
+    color:transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    padding:0 1rem;
+    padding-top: 2.5rem;
+    text-align: center;
+    font-size: 4rem;
+    text-transform: uppercase;
+  }
+  
+  .btn{
+    display: inline-block;
+    margin-top: 1rem;
+    padding:.8rem 3rem;
+    border-radius: .5rem;
+    background:#333;
+    color:#fff;
+    cursor: pointer;
+    font-size: 1.7rem;
+  }
+  
+  .btn:hover{
+    background:var(--gradient);
+  }
+  
+  header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding:2rem 7%;
+    border-bottom: .1rem solid rgba(0,0,0,.1);
+    position: relative;
+    z-index: 1000;
+    background-color: rgb(199, 100, 119);
+  }
+  
+  header .logo{
+    font-size: 2.5rem;
+    color:var(--white);
+    font-weight: bold;
+  }
+  
+  
+  header .navbar a{
+    margin-left: 2rem;
+    font-size: 2rem;
+    color:#333;
+  }
+  
+  header .navbar a:hover{
+    color:var(--white);
+  }
+  
+  .home{
+    display: flex;
+    flex-wrap: wrap;
+    gap:1.5rem;
+    align-items: center;
+  }
+/*   
+  .home .content{
+    / flex:1 1 40rem; /
+  
+  } */
+  
+  .home .image{
+    flex:1 1 40rem;
+  }
+  
+  .home .image img{
+    position:relative;
+    width:100%;
+    height: 550px;
+     opacity: 0.5; 
+  }
+  
+  .home .content h3{
+    position:absolute;
+    top: 350px;
+    left: 320px;
+    font-size: 4.5rem;
+    color:#fff;
+    text-transform: uppercase;
+    text-shadow: 2px 2px #000000;
+  }
+  
+  .content-box{
+    width: 100%;
+    margin: auto;
+    
+  }
+  
+ 
+  
+  
+  .content-box .row{
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  
+  .content-box .column{
+    width: 32%;
+    height: auto;
+    position: relative;
+  }
+  
+  .content-box img{
+    width: 100%;
+    height: 100%;
+  }
+  
+  .content-box .column a:last-child{
+    position: absolute;
+    color:#fff;
+    width: 100%;
+    height: 0;
+    top: 100%;
+    left: 0;
+    bottom: 0;
+    text-align: center;
+    background:	 #ffff3333;
+    line-height: 250px;
+    font-size: 30px;
+  }
+  
+  .content-box .column:hover a:last-child{
+    height: 100%;
+    top: 0;
+  }
+  
+  
+
+  
+  .sub-header{
+    height: 80vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.4), rgba(4,9,30,0.4)), url(../Images/servs.webp);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color:#fff;
+  }
+  
+  .sub-header h1{
+    margin-top: 100px;
+    font-size: 50px;
+  }
+  
+  .about-us{
+    width: 100%;
+    margin: auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  
+  .about-us .row{
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .column1{
+    flex-basis: 50%;
+    padding: 30px 2px;
+    margin: 20px;
+  }
+  
+  .column1 img{
+    width:80%;
+    box-shadow: 5px 10px rgb(211, 104, 104);
+    border-radius: 20px 20px;
+  }
+  
+  .column1 h1{
+    padding-top: 15px;
+    font-size:40px;
+    padding-bottom: 10px;
+    color:rgb(206, 83, 108);
+  }
+  
+  .column1 p{
+    padding-top: 5px 0 25px;
+    font-size: 20px;
+    text-align: justify;
+  }
+  
+  /* / Course Content / */
+  .heading{
+    color:indianred;
+  }
+  
+  h1::before,h1::after{
+    content:"-------";
+    letter-spacing: -5px;
+    margin: 0 10px;
+  }
+  
+  
+  .edu{
+    display: flex;
+    flex-wrap: wrap;
+    gap:1.5rem;
+  }
+  
+  .edu .box{
+    flex:1 1 30rem;
+    border:2px solid rgba(192, 29, 29, 0.233);
+    border-radius:.5rem;
+    padding:1.5rem;
+    text-align: center;
+  }
+  
+  .edu .box img{
+    height: 15rem;
+    width:15rem;
+    margin:.5rem 0;
+    border-radius: 60%;
+    object-fit: cover;
+  }
+  
+  .edu .box h3{
+    
+    font-size: 2.5rem;
+  }
+  
+  
+  
+  .edu .box p{
+    color:rgb(60, 54, 54);
+    font-size: 1.5rem;
+    padding:1rem 0;
+  }
+  
+  
+  .contact{
+    display: flex;
+    flex-wrap: wrap;
+    gap:1.5rem;
+  }
+  
+  .contact .image{
+    flex:1 1 35rem;
+  }
+  
+  .contact .image img{
+    width:100%;
+  }
+  
+  .contact form{
+    flex:1 1 50rem;
+    border:.1rem solid rgba(0,0,0,.1);
+    border-radius: .5rem;
+    padding:2rem;
+  }
+  
+  .contact form .inputBox{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .contact form .inputBox input,
+  .contact form .box, 
+  .contact form textarea{
+    width: 100%;
+    padding:1rem;
+    margin:.7rem 0;
+    font-size: 1.7rem;
+    border:.1rem solid rgba(0,0,0,.1);
+    border-radius: 1cm;
+    text-transform: none;
+    color:#333;
+  } 
+  
+  .contact form .inputBox input:focus,
+  .contact form .box:focus, 
+  .contact form textarea:focus{
+    border-color: var(--pink);
+  }
+  
+  .contact form .inputBox input{
+    width:49%;
+  }
+  
+  .contact form textarea{
+    height: 20rem;
+    resize: none;
+  }
+  
+  
+
+  .footer .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap:1.5rem;
+  }
+  
+  .footer .box-container .box{
+    flex:1 1 20rem;
+  }
+  
+  .footer .box-container .box h3{
+    font-size: 2.5rem;
+    color:var(--violet);
+    padding:.7rem 0;
+  }
+  
+  .footer .box-container .box p{
+    font-size: 1.5rem;
+    color:#666;
+    padding:.7rem 0;
+  }
+  
+  .footer .box-container .box a{
+    display: block;
+    font-size: 1.5rem;
+    color:#666;
+    padding:.7rem 0;
+  }
+  
+  .footer .box-container .box a:hover{
+    color:var(--pink);
+  }
+  
+  .footer .box-container .box p i{
+    padding-right: .5rem;
+    color:var(--pink);
+  }
+  
+  .footer .credit{
+    font-size: 2rem;
+    margin-top: 1rem;
+    padding:1rem;
+    padding-top: 2rem;
+    text-align: center;
+    border-top: .1rem solid rgba(0,0,0,.1);
+    color:#666;
+  }
+  
+  .footer .credit span{
+    color:var(--pink);
+  }
+  
+  
+  
+  /*  media queries  */
+  
+  @media (max-width:991px){
+  
+    html{
+      font-size: 55%;
+    }
+  
+    body{
+      padding:1.5rem;
+    }
+  
+    header{
+      padding:2rem;
+    }
+  
+    section{
+      padding:2rem;
+    }
+  
+  }
+  
+  @media (max-width:768px){
+  
+    #menu{
+      display: initial;
+    }
+  
+    header .navbar{
+      position: absolute;
+      top:100%; left:0; right:0;
+      background:#fff;
+      border-top: .1rem solid rgba(0,0,0,.2);
+      border-bottom: .1rem solid rgba(0,0,0,.2);
+      clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+  
+    header .navbar.active{
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+  
+    header .navbar a{
+      font-size: 2.5rem;
+      display: block;
+      margin:2rem 0;
+      text-align:center;
+    }
+  
+    .contact form .inputBox input{
+      width:100%;
+    }
+  
+  }
+  
+  @media (max-width:400px){
+  
+    html{
+      font-size: 50%;
+    }
+  
+  } 
+  /* courses */
+  .heading{
+    color:indianred;
+  }
+  
+  .heading h1::before,h1::after{
+    content:"-------";
+    letter-spacing: -5px;
+    margin: 0 10px;
+  }
+  
+  
+  .teacher{
+    display: flex;
+    flex-wrap: wrap;
+    gap:1.5rem;
+  }
+  
+  .teacher .box{
+    flex:1 1 30rem;
+    border:.1rem solid rgba(0,0,0,.1);
+    border-radius:.1cm;
+    padding:1.5rem;
+    text-align: center;
+    border:2px solid black;
+  }
+  
+  .teacher .box img{
+    height: 10rem;
+    width:10rem;
+    margin:.5rem 0;
+    border-radius: 60%;
+    object-fit: cover;
+  }
+  
+  .teacher .box h3{
+    
+    font-size: 2.5rem;
+  
+  }
+  
+  
+  
+  .teacher .box p{
+    color:#666;
+    font-size: 1.5rem;
+    padding:1rem 0;
+  }
+  
+  
+  .contact{
+    display: flex;
+    flex-wrap: wrap;
+    gap:1.5rem;
+  }
+  
+  .contact .image{
+    flex:1 1 35rem;
+  }
+  
+  .contact .image img{
+    width:100%;
+  }
+  
+  .contact form{
+    flex:1 1 50rem;
+    border:.1rem solid rgba(0,0,0,.1);
+    border-radius: .5rem;
+    padding:2rem;
+  }
+  
+  .contact form .inputBox{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .contact form .inputBox input,
+  .contact form .box, 
+  .contact form textarea{
+    width: 100%;
+    padding:1rem;
+    margin:.7rem 0;
+    font-size: 1.7rem;
+    border:.1rem solid rgba(0,0,0,.1);
+    border-radius: .5rem;
+    text-transform: none;
+    color:#333;
+  } 
+  
+  .contact form .inputBox input:focus,
+  .contact form .box:focus, 
+  .contact form textarea:focus{
+    border-color: var(--pink);
+  }
+  
+  .contact form .inputBox input{
+    width:49%;
+  }
+  
+  .contact form textarea{
+    height: 20rem;
+    resize: none;
+  }
+  
+  

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Registration Form</title>
+    <style>
+        body {
+            background-image: url(./Images/form.jpg);
+            background-size: cover;
+        }
+
+        .content h2 {
+            text-shadow: 3px 3px grey;
+            font-size: 50px;
+            text-align: center;
+            color: black;
+            margin-bottom: 25px;
+            margin-top: 30px;
+        }
+
+        .heading {
+            padding: 20px;
+            margin: auto;
+            color: rgb(14, 20, 18);
+            font-family: 'Cambria, Cochin, Georgia, Times, ' Times New Roman', serif';
+            font-size: 50px;
+            text-align: center;
+           
+
+        }
+
+        .form {
+            /* margin-right: auto;
+            margin-left: auto; */
+            color: black;
+            font-family: 'Cambria, Cochin, Georgia, Times, ' Times New Roman', serif';
+            font-size: 30px;
+            margin-top: 30px;
+            padding: 30px 30px;
+            text-align:left;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        
+         .btn2 {
+                margin-top: 10px;
+                background-color: red;
+                align-items: center;
+                appearance: none;
+                background-image: radial-gradient(100% 100% at 100% 0, #5adaff 0, #1e643e 100%);
+                border: 0;
+                border-radius: 6px;
+                box-shadow: rgba(45, 35, 66, .4) 0 2px 4px, rgba(45, 35, 66, .3) 0 7px 13px -3px, rgba(58, 65, 111, .5) 0 -3px 0 inset;
+                box-sizing: border-box;
+                color: #fff;
+                cursor: pointer;
+                display: inline-flex;
+                font-family: "JetBrains Mono", monospace;
+                height: 25px;
+                justify-content: center;
+                line-height: 1;
+                list-style: none;
+                overflow: hidden;
+                padding-left: 16px;
+                padding-right: 16px;
+                position: relative;
+                text-align: left;
+                text-decoration: none;
+                transition: box-shadow .15s, transform .15s;
+                user-select: none;
+                -webkit-user-select: none;
+                touch-action: manipulation;
+                white-space: nowrap;
+                will-change: box-shadow, transform;
+                font-size: 18px;
+            }
+           
+    </style>
+</head>
+
+<body>
+    <section>
+
+        <h1 class="heading">Registration Form</h1>
+        <form action="./success.html" novalidate>
+
+            <table class="form">
+                <tr>
+                    <td> <label for="fname">Candidate Name:</label></td>
+                    <td><input id="fname" name="myName" style="border-radius: 0.5cm;"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td id="error1"></td>
+                </tr>
+                <tr>
+                    <td> <label for="age">Age: </label></td>
+                    <td> <input type="number" id="age" style="border-radius: 0.5cm;"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td id="error2"></td>
+                </tr>
+                <tr>
+                    <td><label for="contact">Mobile Number: </label></td>
+                    <td><input id="contact" type="tel"style="border-radius: 0.5cm;"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td id="error3"></td>
+                </tr>
+                <tr>
+                    <td> <label for="mail">Email Id: </label></td>
+                    <td><input type="email" id="mail" style="border-radius: 0.5cm;"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td id="error4"></td>
+                </tr>
+
+                <tr>
+                    <td> <label for="pass">Set Password: </label></td>
+                    <td><input type="password" id="pass" style="border-radius: 0.5cm"; required></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td id="error6"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="checkbox" id="check" onclick="myFunction()"><label>Show Password</label></td>
+                </tr>
+                <tr>
+                    <td> <label for="confirmpass">Confirm Password: </label></td>
+                    <td> <input type="password" id="confirmpass"style="border-radius: 0.5cm;" required></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td id="error7"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td> <input type="submit" value="REGISTER" class="btn2" onclick="alert1()"> <input type="reset" class="btn2"></td>
+                </tr>
+            </table>
+        </form>
+    </section>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!--minified-->
+    <script src="../Jquery/formsValidate.js"></script>
+    <script>
+        function alert1(){
+            alert("Thank you for getting in touch! We appreciate you contacting DREAMS..")
+        }
+
+    </script>
+</body>
+
+</html>
